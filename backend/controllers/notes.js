@@ -40,7 +40,7 @@ notesRouter.delete("/:id", (req, res, next) => {
         .then((result) => {
             res.status(204).end()
         })
-        // .catch((error) => next(error))
+        .catch((error) => next(error))
 })
 
 notesRouter.put("/:id", (req, res, next) => {
