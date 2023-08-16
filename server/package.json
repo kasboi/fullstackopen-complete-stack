@@ -1,12 +1,12 @@
 {
-  "name": "backend",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "build:ui": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../backend",
+    "build:ui": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../server",
     "deploy": "fly deploy",
     "deploy:prod": "npm run build:ui && npm run deploy",
     "logs:prod": "fly logs",
